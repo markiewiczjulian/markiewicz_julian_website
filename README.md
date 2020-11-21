@@ -22,6 +22,8 @@ This website works similar to the original that was based on (look [here](https:
 
 Two noticeable differences are the projects directory which allows you to add projects with description, image (there is also option to click and show the image in full resolution) and url to project.
 
+![Screenshot from 2020-11-21 23-24-06](https://user-images.githubusercontent.com/39520658/99888912-b3c57480-2c50-11eb-8250-3df88d0a3aef.png)
+
 To add image to the project site add `mainimg` property in front matter and specify the image url or path.
 
 To add the repository address to the project you can use `codeaddress` property.
