@@ -10,7 +10,7 @@ Hi you have found my blog[^1] where I post all things that might help someone in
 
 My name is Julian Markiewicz and I am Poland based web developer mainly writing code in javascript or javascript frameworks (like angular2 or vuejs). I also try to do some backend (node.js) stuff because I find building whole website from A to Z interesting. I am a big fan of open source. Using linux from few years as a daily driver. I try to write articles about coding and contribute to the community.
 
-In my spare time I try to keep up with constant changes and novelties in JS. But when I'm not figthing with JS I watch movies 🍿 (especially south corean ones that somehow manage to surprise me every single time)[^2] and bake breads 🍞.
+In my spare time I try to keep up with constant changes and novelties in JS. But when I'm not fighting with JS I watch movies 🍿 (especially south korean ones that somehow manage to surprise me every single time)[^2] and bake breads 🍞.
 
 If you found a bug or want to talk, feel free to always reach me at markiewicz.julian@gmail.com
 
