@@ -6,7 +6,7 @@ This website was heavily inspired by shibumi [hugo-theme-hello-friend-ng](https:
 
 # How to run
 
-To run this website locally you should install Hugo at least version 0.74.x (extended version). After this you can run
+To run this website locally you should install Hugo at least version 0.74.x (extended version). After this you can run:
 
 `hugo server -t hello-friend-ng`
 
