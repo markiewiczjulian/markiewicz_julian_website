@@ -3,6 +3,7 @@ title: "My First Post"
 date: 2020-11-18T10:51:59+01:00
 draft: false
 tags: [html, github]
+cover: "images/my-first-post-01.jpg"
 ---
 
 So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost **every day**, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).
@@ -66,7 +67,7 @@ Remember that translationApiToken is optional and if you don't have it (you want
 
 After you or your colleague submit a comment inside an issue or pull request the action gets triggered. Action will replace the message to translation from funtranslations and also add the info at the text beginning (`[translated from English, to yodish]:`).
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/i/bjh10cs5lbivfzaf800c.png)
+![Alt Text](/images/my-first-post-02.png)
 
 ### Submission Category:
 
