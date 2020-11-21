@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $paginator := .Paginate .Data.Pages }}
+
+<main class="projects">
+    <h1>{{ .Title }}</h1>
+
+
+    {{ if .Content }}
+    <div class="content">{{ .Content }}</div>
+    {{ end }}
+
+    {{ range $paginator.Pages.GroupByDate "2006" }}
+    <div class="projects-group">
+
+        <ul class="projects-list">
+            {{ range .Pages }}
+            <li class="project-item">
+                {{if .Params.mainimg}}
+                <img src="{{.Params.mainimg}}"
+                     alt="{{.Title}}"
+                     class="project-image"
+                     id="project-image-{{.Title}}">
+                {{end}}
+                <a href="{{.Params.codeaddress}}">
+                    <div class="project-details">
+                        <h3 class="project-title">{{.Title}}</h3>
+                        <span class="project-description">{{.Content}}</span>
+                        <span class="project-link">learn more...</span>
+                    </div>
+                </a>
+                <!-- The Modal -->
+            </li>
+            {{ end }}
+            <div id="project-img-modal"
+                 class="project-img-modal">
+                <img class="modal-img"
+                     id="modal-img">
+            </div>
+        </ul>
+    </div>
+    {{ end }}
+    {{ partial "pagination.html" . }}
+</main>
+{{ end }}
