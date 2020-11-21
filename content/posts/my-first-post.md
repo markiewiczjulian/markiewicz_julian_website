@@ -75,7 +75,5 @@ Wacky Wildcards
 
 ### Yaml File or Link to Code
 
-Here you can check out the code of yoda action.
-{% github https://github.com/markiewiczjulian/yoda-translation-action %}
-You can also check the yoda-translation-action-test repository to see simple node.js app where I have used this action.
-{% github https://github.com/markiewiczjulian/yoda-translation-action-test %}
+Here you can check out the code of yoda action [link](https://github.com/markiewiczjulian/yoda-translation-action).
+You can also check the yoda-translation-action-test repository to see simple node.js app where I have used this action [here](https://github.com/markiewiczjulian/yoda-translation-action-test).
