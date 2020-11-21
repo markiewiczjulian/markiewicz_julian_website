@@ -27,3 +27,5 @@ Two noticeable differences are the projects directory which allows you to add pr
 To add image to the project site add `mainimg` property in front matter and specify the image url or path.
 
 To add the repository address to the project you can use `codeaddress` property.
+
+![Screenshot from 2020-11-21 23-27-19](https://user-images.githubusercontent.com/39520658/99888970-246c9100-2c51-11eb-8821-f2c66657ea97.png)
