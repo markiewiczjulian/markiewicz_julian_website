@@ -70,6 +70,7 @@
       cursor: pointer;
       width: 40%;
       object-fit: cover;
+      object-position: 0 0;
       box-shadow: 2px 2px 6px black;
       flex-grow: 1;
       @media #{$media-size-phone} {
