@@ -18,11 +18,11 @@ and move whole directory `/YOUR_PROJECT_ADDRESS/themes/hello-friend-ng` to the t
 
 # How to use
 
-This website works similar to the original that was based on (look [here](https://github.com/shibumi/hugo-theme-hello-friend-ng) and [here](https://github.com/panr/hugo-theme-hello-friend)), so I will not describe all options that can be used in conf.toml. I will however leave the example toml file config_example.toml in root of project which describes all options that can be defined for whole site.
+This website works similar to the original that was based on [this](https://github.com/shibumi/hugo-theme-hello-friend-ng) one and [this](https://github.com/panr/hugo-theme-hello-friend)) one, so I will not describe all options that can be used in conf.toml. I will however leave the example toml file config_example.toml in root of project which describes all options that can be defined for whole site.
 
 Two noticeable differences are the projects directory which allows you to add projects with description, image (there is also option to click and show the image in full resolution) and url to project.
 
-![Screenshot from 2020-11-21 23-24-06](https://user-images.githubusercontent.com/39520658/99888912-b3c57480-2c50-11eb-8250-3df88d0a3aef.png)
+![Screenshot from 2020-11-22 11-08-57](https://user-images.githubusercontent.com/39520658/99900922-2a935980-2cb3-11eb-9489-b7e57c9d324a.png)
 
 To add image to the project site add `mainimg` property in front matter and specify the image url or path.
 
