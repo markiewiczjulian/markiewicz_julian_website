@@ -18,7 +18,7 @@ and move whole directory `/YOUR_PROJECT_ADDRESS/themes/hello-friend-ng` to the t
 
 # How to use
 
-This website works similar to the original that was based on (look [here](https://github.com/shibumi/hugo-theme-hello-friend-ng) and [here](https://github.com/panr/hugo-theme-hello-friend)), so I will not describe all options that can be used in conf.toml. I will however leave the example toml file config_example.toml in root of project which describes all options that can be defined for whole site.
+This website works similar to the original that was based on [this](https://github.com/shibumi/hugo-theme-hello-friend-ng) one and [this](https://github.com/panr/hugo-theme-hello-friend)) one, so I will not describe all options that can be used in conf.toml. I will however leave the example toml file config_example.toml in root of project which describes all options that can be defined for whole site.
 
 Two noticeable differences are the projects directory which allows you to add projects with description, image (there is also option to click and show the image in full resolution) and url to project.
 
