@@ -15,5 +15,5 @@ In my spare time I try to keep up with constant changes and novelties in JS. But
 
 If you found a bug or want to talk, feel free to always reach me at markiewicz.julian@gmail.com
 
-[^1]: This website was build with Hugo, using [this](https://github.com/rhazdon/hugo-theme-hello-friend-ng) theme with minor tweaks here and there.
+[^1]: This website was build with Hugo, using [hugo-theme-hello-friend](https://github.com/rhazdon/hugo-theme-hello-friend-ng) and [hugo-theme-hello-friend-ng](https://github.com/panr/hugo-theme-hello-friend) themes with minor tweaks here and there.
 [^2]: if you don't believe me watch these three movies: [Parasite](https://www.imdb.com/title/tt6751668/), [Train to Busan](https://www.imdb.com/title/tt5700672/) and [The man from nowhere](https://www.imdb.com/title/tt1527788/)

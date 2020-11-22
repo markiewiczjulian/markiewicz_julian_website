@@ -1,6 +1,6 @@
 # markiewicz_julian_website
 
-Repository with code of my website build with HUGO. If you want to see the final product go [here](https://markiewiczjulian.github.io/).
+This repository serves my personal website via GitHub Pages. You can view it [here](https://markiewiczjulian.github.io/).
 
 This website was heavily inspired by shibumi [hugo-theme-hello-friend-ng](https://github.com/shibumi/hugo-theme-hello-friend-ng) and panr [hugo-theme-hello-friend](https://github.com/panr/hugo-theme-hello-friend) themes.
 
