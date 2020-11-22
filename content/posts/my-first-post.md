@@ -6,6 +6,8 @@ tags: [html, github]
 cover: "images/my-first-post-01.jpg"
 ---
 
+> _This post was originally published on [dev.to](https://dev.to/markiewiczjulian/my-first-time-using-github-actions-4kcd) website._
+
 So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost **every day**, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).
 
 Github actions are something I was hoping to try sooner but there had always been an excuse. But with the announcement of [actionshackaton](https://dev.to/devteam/announcing-the-github-actions-hackathon-on-dev-3ljn) there are no excuses to dive in and learn something new.
