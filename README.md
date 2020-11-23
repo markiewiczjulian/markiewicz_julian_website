@@ -22,7 +22,7 @@ This website works similar to the original that was based on [this](https://gith
 
 Two noticeable differences are the projects directory which allows you to add projects with description, image (there is also option to click and show the image in full resolution) and url to project.
 
-![Screenshot from 2020-11-22 11-08-57](https://user-images.githubusercontent.com/39520658/99900922-2a935980-2cb3-11eb-9489-b7e57c9d324a.png)
+![Screenshot from 2020-11-23 13-37-21](https://user-images.githubusercontent.com/39520658/99962761-0d34bd00-2d91-11eb-9f22-c4db743697f7.png)
 
 To add image to the project site add `mainimg` property in front matter and specify the image url or path.
 
