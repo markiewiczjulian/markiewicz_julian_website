@@ -3,7 +3,7 @@ title: "My First Post"
 date: 2020-09-07T10:51:59+01:00
 draft: false
 tags: [html, github]
-cover: "images/my-first-post-cover.jpg"
+cover: "images/posts/01/cover.jpg"
 ---
 
 > _This post was originally published on [dev.to](https://dev.to/markiewiczjulian/my-first-time-using-github-actions-4kcd) website._
@@ -69,7 +69,7 @@ Remember that translationApiToken is optional and if you don't have it (you want
 
 After you or your colleague submit a comment inside an issue or pull request the action gets triggered. Action will replace the message to translation from funtranslations and also add the info at the text beginning (`[translated from English, to yodish]:`).
 
-![Alt Text](/images/my-first-post-01.png)
+![](/images/posts/01/01.png)
 
 ### Submission Category:
 

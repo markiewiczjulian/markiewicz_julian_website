@@ -3,7 +3,7 @@ title: "Project management tool"
 date: 2020-11-18T10:51:59+01:00
 draft: false
 tags: [html, github, project management, jira, angular, nodejs]
-mainimg: "/images/project_management_tool.png"
+mainimg: "/images/projects/project_management_tool.png"
 codeaddress: "https://github.com/markiewiczjulian/project_management_tool"
 ---
 
