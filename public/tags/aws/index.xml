@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on Julian Markiewicz</title>
+    <link>http://example.org/tags/aws/</link>
+    <description>Recent content in AWS on Julian Markiewicz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Nov 2020 10:51:59 +0100</lastBuildDate><atom:link href="http://example.org/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to amplify your development process with AWS Amplify</title>
+      <link>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</link>
+      <pubDate>Mon, 02 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</guid>
+      <description>What is AWS Amplify? &amp;ldquo;AWS Amplify is an end-to-end solution that enables mobile and front-end web developers to build and deploy secure, scalable full stack applications, powered by AWS. With Amplify, you can configure app backends in minutes, connect them to your app in just a few lines of code, and deploy static web apps in three steps. Get to market faster with AWS Amplify.&amp;rdquo; This is a quote from the official Amplify website and while it sounds promising (like all new solutions) I wasn&amp;rsquo;t expecting that I would &amp;ldquo;Get to market faster with AWS Amplify&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>

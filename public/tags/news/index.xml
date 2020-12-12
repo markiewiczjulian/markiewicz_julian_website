@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>news on Julian Markiewicz</title>
+    <link>http://example.org/tags/news/</link>
+    <description>Recent content in news on Julian Markiewicz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 10:51:59 +0100</lastBuildDate><atom:link href="http://example.org/tags/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News reader</title>
+      <link>http://example.org/projects/news_reader/</link>
+      <pubDate>Wed, 18 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/projects/news_reader/</guid>
+      <description>Based mainly on requests made to Google news API, news reader. This short project also utilizes Weatherbit API. In this project technologies such as angular2, bootstrap were used.</description>
+    </item>
+    
+  </channel>
+</rss>

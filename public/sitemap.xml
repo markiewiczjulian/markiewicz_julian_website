@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+    <lastmod>2020-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/angular/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/github/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/html/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/jira/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/news/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/news_reader/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/nodejs/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/project-management/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/project_management_tool/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/projects/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2020-11-18T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/amplify/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/authentication/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/aws/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/cognito/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/iam/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2020-11-02T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/posts/01-my-first-post/</loc>
+    <lastmod>2020-09-07T10:51:59+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+</urlset>

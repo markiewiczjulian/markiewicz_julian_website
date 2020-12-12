@@ -1,0 +1,208 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Julian Markiewicz</title>
+        <link>http://example.org/posts/</link>
+        <description>Recent content in Posts on Julian Markiewicz</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 02 Nov 2020 10:51:59 +0100</lastBuildDate>
+        <atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>How to amplify your development process with AWS Amplify</title>
+            <link>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</link>
+            <pubDate>Mon, 02 Nov 2020 10:51:59 +0100</pubDate>
+            
+            <guid>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</guid>
+            <description>What is AWS Amplify? &amp;ldquo;AWS Amplify is an end-to-end solution that enables mobile and front-end web developers to build and deploy secure, scalable full stack applications, powered by AWS. With Amplify, you can configure app backends in minutes, connect them to your app in just a few lines of code, and deploy static web apps in three steps. Get to market faster with AWS Amplify.&amp;rdquo; This is a quote from the official Amplify website and while it sounds promising (like all new solutions) I wasn&amp;rsquo;t expecting that I would &amp;ldquo;Get to market faster with AWS Amplify&amp;rdquo;.</description>
+            <content type="html"><![CDATA[<h2 id="what-is-aws-amplify">What is AWS Amplify?</h2>
+<p>&ldquo;AWS Amplify is an end-to-end solution that enables mobile and front-end web developers to build and deploy secure, scalable full stack applications, powered by AWS. With Amplify, you can configure app backends in minutes, connect them to your app in just a few lines of code, and deploy static web apps in three steps. Get to market faster with AWS Amplify.&rdquo; This is a quote from the official Amplify website and while it sounds promising (like all new solutions) I wasn&rsquo;t expecting that I would &ldquo;Get to market faster with AWS Amplify&rdquo;. I was wrong.
+AWS Amplify is a neat little toolbox which helps you with using AWS services in mobile or frontend. If you need to add a fast reliable storage, authentication or pub/sub. You can use Amplify.
+Whole framework is composed of three components: libraries, UI components and CLI toolchain. You use libraries to, for example, add the authentication using Cognito. UI components are neat little components for all major players like vue.js, react, angular, ionic, react native, native mobile development (flutter coming <a href="https://aws.amazon.com/blogs/mobile/announcing-aws-amplify-flutter-developer-preview/">soon</a>). So if you need the authentication, AWS will provide basic vue.js form for you&hellip;how cool is this. Libraries and UI components are open source. Finally CLI toolchain is the component I was least hyped for. I was expecting some basic solution which will require to do a lot on my own. This toolchain holds your hand every step of the way and I mean it. Adding the authentication it asks you if you have, for example, an IAM user. If you say &ldquo;NO&rdquo; it opens a browser on AWS website for you and waits while you add a new user. This component was there all the way with some info, tips and thus I spent less time reading about how to do it in the docs and more time just doing it.</p>
+<h2 id="why-not-do-it-yourself-if-you-can">Why not do it yourself (if you can)?</h2>
+<p>You are probably reading this and thinking &ldquo;I can do it all by myself why would I need the AWS tool for it&rdquo;. Well lucky you but there are few things to consider:</p>
+<ol>
+<li>You are in minority. Most frontend developers I know don&rsquo;t know how to do backend.</li>
+<li>I also can add authentication or database support to my own backend but I will be doing it for at least a few hours (authentication showed later has taken me 20 minutes only and a lot of this time was unattended).</li>
+<li>Even if I did it by myself I am not always sure whether I&rsquo;ve done it the right, secure way. It is ok if I developed my own website, but when you deliver a solution for a client, you need to be 100% sure that you do not expose sensitive data for someone skillful to just steal it.</li>
+<li>Currently, there are a lot of regulations in place concerning sensitive data storage. You can do it yourself, but it will take time and effort. However, by using AWS you will have it in no time.</li>
+</ol>
+<h2 id="how-amplify-compares-to-firebase-which-should-i-use">How Amplify compares to Firebase? Which should I use?</h2>
+<p>Having read a little about it, I think that if your team is small and you do not work with a lot of data you can skip AWS. Firebase has a lower learning curve and there is a lot more detailed tutorials about it. On the other hand, if you have some experience with AWS, Amplify is a better choice because you know what to expect and where to look for savings.</p>
+<h2 id="adding-authentication-in-vuejs-application-demonstration">Adding authentication in vuejs application (demonstration)</h2>
+<p>I can talk all day about why it is a good or bad solution but nothing speaks better than a little demonstration. I will try to add a basic email authentication to bare bones vue.js application.</p>
+<p>Prerequisites:</p>
+<ul>
+<li>node.js installed (if you need to install it refer to this <a href="https://nodejs.org/en/download/">page</a>),</li>
+<li>AWS account created (if you don&rsquo;t yet have one, create it <a href="https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fportal.aws.amazon.com%2Fbilling%2Fsignup%2Fresume&amp;client_id=signup#/start">here</a>),</li>
+</ul>
+<ol>
+<li>
+<p>Ok so for start we have to install and configure the AWS Amplify. Run this in your terminal:</p>
+<p><code>npm install -g @aws-amplify/cli</code></p>
+</li>
+<li>
+<p>Then when the installation finishes type:</p>
+<p><code>amplify configure</code></p>
+</li>
+<li>
+<p>You will be asked series of questions like your preferred region (choose something closest to you), Amplify user name. Then AWS will prompt you to log in and create IAM user. You can leave all default values there, but one thing that is important is to add the user &ldquo;AdministratorAccess&rdquo;. Otherwise it will not work as expected (AWS Amplify needs this permissions to provision services like Cognito, S3 etc.). When creating the user, save the accessKeyId and secretAccessKey, you will need them in a minute.</p>
+<p><img src="/images/posts/02/01.png" alt=""></p>
+</li>
+<li>
+<p>Type the accessKeyId and secretAccessKey, when prompted.</p>
+</li>
+<li>
+<p>If everything is ok you will receive a success message inside your terminal.</p>
+</li>
+<li>
+<p>Now we can proceed to the fun part of adding the authentication. Create new vue.js app using vue CLI:</p>
+<p><code>vue create hello-world</code></p>
+</li>
+<li>
+<p>Go to the root of our project and type this in terminal to add the authentication service:</p>
+<p><code>amplify add auth</code></p>
+</li>
+<li>
+<p>Then push the service with:</p>
+<p><code>amplify push</code></p>
+</li>
+<li>
+<p>Now install the node libraries:</p>
+<p><code>npm install aws-amplify @aws-amplify/ui-vue</code></p>
+</li>
+<li>
+<p>Go to file main.js. You should find it in the src directory and add this code beneath last import:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">    <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Amplify</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;aws-amplify&#34;</span>;
+    <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">awsconfig</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#34;./aws-exports&#34;</span>;
+    <span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;@aws-amplify/ui-vue&#34;</span>;
+    <span style="color:#a6e22e">Amplify</span>.<span style="color:#a6e22e">configure</span>(<span style="color:#a6e22e">awsconfig</span>);
+</code></pre></div></li>
+<li>
+<p>Open App.js file and replace whole template part with this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+    &lt;<span style="color:#f92672">amplify-authenticator</span>&gt;
+        &lt;<span style="color:#f92672">div</span>&gt;
+            &lt;<span style="color:#f92672">HelloWorld</span> <span style="color:#a6e22e">msg</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Welcome to Your Vue.js App&#34;</span> /&gt;
+            &lt;<span style="color:#f92672">amplify-sign-out</span>&gt;&lt;/<span style="color:#f92672">amplify-sign-out</span>&gt;
+        &lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">amplify-authenticator</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+</code></pre></div><p>This is the Amplify vue.js UI component that will render the login/register form and our content (content displayed after login is located within amplify-authenticator so we will display div with HelloWorld component and log out component).</p>
+</li>
+<li>
+<p>Go to HelloWorld.js and replace whole template with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">template</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;hello&#34;</span>&gt;
+        &lt;<span style="color:#f92672">h1</span>&gt;{{ msg }}&lt;/<span style="color:#f92672">h1</span>&gt;
+        &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;../assets/200.gif&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span> /&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">template</span>&gt;
+</code></pre></div></li>
+<li>
+<p>I&rsquo;ve added some img because this site had little to no content. Voila, now you should have a working authentication on your website. If you don&rsquo;t have the account you can obviously register. All users can be managed from the IAM Management Console.</p>
+<p>Login:</p>
+<p><img src="/images/posts/02/02.png" alt=""></p>
+<p>Register:</p>
+<p><img src="/images/posts/02/03.png" alt=""></p>
+<p>After authentication:</p>
+<p><img src="/images/posts/02/04.png" alt=""></p>
+</li>
+</ol>
+<h2 id="how-much-will-it-cost">How much will it cost?</h2>
+<p>It is important to address the elephant in the room and talk about money. Cloud solutions can be pricy. In all fairness, right now I still use the free tier in AWS but looking at AWS site about IAM we can read that: &ldquo;IAM is a feature of your AWS account offered at no additional charge. You will be charged only for use of other AWS services by your users.&rdquo;. So in my case when adding authentication I was using mainly Cognito which is priced accordingly:</p>
+<p><img src="/images/posts/02/05.png" alt=""></p>
+<p>MAU stands for monthly active users (the ones that log in at least once a month) and during the test period of the application I acquired 2 users so 2 x $0.0055 = $0.011, which is just ridiculous. I would be required to pay for it only when more than 50000 users use it monthly. For this price I can test the app for months and pay nothing. The cost is low but we have to remember that my &ldquo;app&rdquo; uses one small part of AWS only, but I think that if we looked up the prices before using services and kept monitoring what happens in our account we can use Amplify for testing purposes and some small private tools for almost free. The cost for business solutions varies, because if we had a lot of users this can get pretty pricy really fast. So here we would need someone who knows ins and outs of AWS and would recommend solutions based on their price and our current requirements.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Overall Amplify was a big surprise for me. I had a nice time implementing authentication. All was streamlined, tools were easy to use and were playing great with my stack. Documentation was ok and up to date. Libraries can be used in many ways for example you don&rsquo;t have to use the Amplify UI, which will help in some borderline cases. Price is not an issue when doing some small projects. For big ones I would recommend to speak with someone with a lot of experience in AWS who would be able to recommend solutions based on their price and advantages. The great thing about solutions like AWS is that we don&rsquo;t have to use it all. We can utilize AWS authentication and the rest can be custom made. If you had some spare time I highly recommend to give Amplify a try.</p>
+<p>Resources:</p>
+<ul>
+<li><a href="https://docs.amplify.aws/lib/auth/getting-started/q/platform/js">https://docs.amplify.aws/lib/auth/getting-started/q/platform/js</a></li>
+<li><a href="https://docs.amplify.aws/cli/start/install">https://docs.amplify.aws/cli/start/install</a></li>
+<li><a href="https://aws.amazon.com/amplify/">https://aws.amazon.com/amplify/</a></li>
+<li><a href="https://github.com/aws-amplify/amplify-js">https://github.com/aws-amplify/amplify-js</a></li>
+<li><a href="https://aws.amazon.com/cognito/pricing/">https://aws.amazon.com/cognito/pricing/</a></li>
+<li><a href="https://aws.amazon.com/iam/">https://aws.amazon.com/iam/</a></li>
+<li><a href="https://aws.amazon.com/blogs/mobile/announcing-aws-amplify-flutter-developer-preview/">https://aws.amazon.com/blogs/mobile/announcing-aws-amplify-flutter-developer-preview/</a></li>
+<li><a href="https://blog.back4app.com/aws-amplify-vs-google-firebase/">https://blog.back4app.com/aws-amplify-vs-google-firebase/</a></li>
+<li><a href="https://www.mitrais.com/news-updates/aws-amplify-vs-google-firebase-which-is-better/#:~:text=Firebase%20is%20suitable%20for%20small,learning%20curve%20is%20very%20important">https://www.mitrais.com/news-updates/aws-amplify-vs-google-firebase-which-is-better/#:~:text=Firebase%20is%20suitable%20for%20small,learning%20curve%20is%20very%20important</a>.</li>
+</ul>
+<p>Other resources:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=SnqABG8e9Zk">https://www.youtube.com/watch?v=SnqABG8e9Zk</a> this is a recording from The Summit in 2019 where David Maccarone managed to build a real time voting app in under 25 minutes. Using AWS Amplify obviously,</li>
+<li><a href="https://www.youtube.com/watch?v=ucmbO2lWC2A">https://www.youtube.com/watch?v=ucmbO2lWC2A</a> this is a short video of &ldquo;Fireship&rdquo; youtube channel about how Amplify compares to Firebase, might come in handy if you used Google and want to give AWS a try,</li>
+</ul>
+]]></content>
+        </item>
+        
+        <item>
+            <title>My First Post</title>
+            <link>http://example.org/posts/01-my-first-post/</link>
+            <pubDate>Mon, 07 Sep 2020 10:51:59 +0100</pubDate>
+            
+            <guid>http://example.org/posts/01-my-first-post/</guid>
+            <description>This post was originally published on dev.to website.
+ So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost every day, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).
+Github actions are something I was hoping to try sooner but there had always been an excuse.</description>
+            <content type="html"><![CDATA[<blockquote>
+<p><em>This post was originally published on <a href="https://dev.to/markiewiczjulian/my-first-time-using-github-actions-4kcd">dev.to</a> website.</em></p>
+</blockquote>
+<p>So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost <strong>every day</strong>, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).</p>
+<p>Github actions are something I was hoping to try sooner but there had always been an excuse. But with the announcement of <a href="https://dev.to/devteam/announcing-the-github-actions-hackathon-on-dev-3ljn">actionshackaton</a> there are no excuses to dive in and learn something new.</p>
+<h3 id="my-workflow">My Workflow</h3>
+<p>I decided to do something which is unnecessary and thus would neatly fell into category of wacky wildcards. I decided to prepare yoda translator for issue and pull request comments. In order to start using this action you have to prepare few things.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>You have to create a secret (if you don&rsquo;t know what I&rsquo;m talking about look <a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets">here</a>), inside your repository where you intend to use the action, with Github Access Token inside (<a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">here</a> is Github doc about how to do it step by step). This is required in order for the action to work.</li>
+<li>Also if you want to make more than 60 API calls daily (this is 5 calls per hour), you have to create a secret with a token from <a href="https://funtranslations.com/api/yoda">funtranslations</a> website.</li>
+</ol>
+<h3 id="how-to-use-it">How to use it</h3>
+<p>After you have added the Github Access Token as a secret you can start adding the configuration for your action within destined project. Here you can follow <a href="https://docs.github.com/en/actions/language-and-framework-guides/using-nodejs-with-github-actions">this</a> doc from Github.</p>
+<p>To summarise what needs to be done:</p>
+<ul>
+<li>create, in the root of your project, directory called .github,</li>
+<li>then within this directory add a folder called workflows,</li>
+<li>inside workflows folder add main.yml file,</li>
+</ul>
+<p>After all this, inside previously created file, put code which looks similar to this one (Github user name will differ so you have to change the part which uses markiewiczjulian/yoda-translation-action@master and also you could have named your secrets differently to me, so sections with properties: githubAccessToken, translationApiToken, would be your point of interest).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">name</span>: <span style="color:#ae81ff">Yoda translation</span>
+
+<span style="color:#f92672">on</span>:
+  <span style="color:#f92672">pull_request_review_comment</span>:
+    <span style="color:#f92672">types</span>: [<span style="color:#ae81ff">created, edited]</span>
+  <span style="color:#f92672">issue_comment</span>:
+    <span style="color:#f92672">types</span>: [<span style="color:#ae81ff">created]</span>
+
+<span style="color:#f92672">jobs</span>:
+  <span style="color:#f92672">build</span>:
+    <span style="color:#f92672">runs-on</span>: <span style="color:#ae81ff">ubuntu-latest</span>
+
+    <span style="color:#f92672">steps</span>:
+      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/checkout@v2</span>
+        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Use Node.js 12.X</span>
+      - <span style="color:#f92672">run</span>: <span style="color:#ae81ff">npm install</span>
+      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">markiewiczjulian/yoda-translation-action@master</span>
+        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">use yoda-translation-action</span>
+        <span style="color:#f92672">with</span>:
+          <span style="color:#f92672">githubAccessToken</span>: <span style="color:#ae81ff">${{secrets.GIT_ACCESS_TOKEN}}</span>
+          <span style="color:#f92672">translationApiToken</span>: <span style="color:#ae81ff">${{secrets.TRANSLATION_API_TOKEN}}</span>
+      - <span style="color:#f92672">uses</span>: <span style="color:#ae81ff">actions/setup-node@v1</span>
+        <span style="color:#f92672">name</span>: <span style="color:#ae81ff">use actions/setup-node</span>
+        <span style="color:#f92672">with</span>:
+          <span style="color:#f92672">node-version</span>: <span style="color:#e6db74">&#34;12.X&#34;</span>
+        <span style="color:#f92672">env</span>:
+          <span style="color:#f92672">CI</span>: <span style="color:#66d9ef">true</span>
+</code></pre></div><p>Remember that translationApiToken is optional and if you don&rsquo;t have it (you want to use a free tier on funtranslations), you simply don&rsquo;t include it in the yml file.</p>
+<h2 id="how-this-works">How this works</h2>
+<p>After you or your colleague submit a comment inside an issue or pull request the action gets triggered. Action will replace the message to translation from funtranslations and also add the info at the text beginning (<code>[translated from English, to yodish]:</code>).</p>
+<p><img src="/images/posts/01/01.png" alt=""></p>
+<h3 id="submission-category">Submission Category:</h3>
+<p>Wacky Wildcards</p>
+<h3 id="yaml-file-or-link-to-code">Yaml File or Link to Code</h3>
+<p>Here you can check out the code of yoda action <a href="https://github.com/markiewiczjulian/yoda-translation-action">link</a>.
+You can also check the yoda-translation-action-test repository to see simple node.js app where I have used this action <a href="https://github.com/markiewiczjulian/yoda-translation-action-test">here</a>.</p>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

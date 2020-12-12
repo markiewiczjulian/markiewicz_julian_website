@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on Julian Markiewicz</title>
+    <link>http://example.org/tags/github/</link>
+    <description>Recent content in github on Julian Markiewicz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 10:51:59 +0100</lastBuildDate><atom:link href="http://example.org/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>News reader</title>
+      <link>http://example.org/projects/news_reader/</link>
+      <pubDate>Wed, 18 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/projects/news_reader/</guid>
+      <description>Based mainly on requests made to Google news API, news reader. This short project also utilizes Weatherbit API. In this project technologies such as angular2, bootstrap were used.</description>
+    </item>
+    
+    <item>
+      <title>Project management tool</title>
+      <link>http://example.org/projects/project_management_tool/</link>
+      <pubDate>Wed, 18 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/projects/project_management_tool/</guid>
+      <description>Simple Jira is a clone that allows people in a project to manage tasks and sprints. In this project technologies such as angular2, bootstrap, node.js and mongoDB were used.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/posts/01-my-first-post/</link>
+      <pubDate>Mon, 07 Sep 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/posts/01-my-first-post/</guid>
+      <description>This post was originally published on dev.to website.
+ So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost every day, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).
+Github actions are something I was hoping to try sooner but there had always been an excuse.</description>
+    </item>
+    
+  </channel>
+</rss>

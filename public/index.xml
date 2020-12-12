@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Julian Markiewicz</title>
+    <link>http://example.org/</link>
+    <description>Recent content on Julian Markiewicz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 10:51:59 +0100</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Sun, 22 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>Hi, you have found my blog1 where I post all things that might help someone in their web development journey.
+My name is Julian Markiewicz and I am Poland based web developer mainly writing code in javascript or javascript frameworks (like angular2 or vuejs). I also try to do some backend (node.js) stuff because I find building a whole website from A to Z interesting. I am a big fan of open source.</description>
+    </item>
+    
+    <item>
+      <title>News reader</title>
+      <link>http://example.org/projects/news_reader/</link>
+      <pubDate>Wed, 18 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/projects/news_reader/</guid>
+      <description>Based mainly on requests made to Google news API, news reader. This short project also utilizes Weatherbit API. In this project technologies such as angular2, bootstrap were used.</description>
+    </item>
+    
+    <item>
+      <title>Project management tool</title>
+      <link>http://example.org/projects/project_management_tool/</link>
+      <pubDate>Wed, 18 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/projects/project_management_tool/</guid>
+      <description>Simple Jira is a clone that allows people in a project to manage tasks and sprints. In this project technologies such as angular2, bootstrap, node.js and mongoDB were used.</description>
+    </item>
+    
+    <item>
+      <title>How to amplify your development process with AWS Amplify</title>
+      <link>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</link>
+      <pubDate>Mon, 02 Nov 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/posts/02-how-to-amplify-your-development-process-with-aws-amplify/</guid>
+      <description>What is AWS Amplify? &amp;ldquo;AWS Amplify is an end-to-end solution that enables mobile and front-end web developers to build and deploy secure, scalable full stack applications, powered by AWS. With Amplify, you can configure app backends in minutes, connect them to your app in just a few lines of code, and deploy static web apps in three steps. Get to market faster with AWS Amplify.&amp;rdquo; This is a quote from the official Amplify website and while it sounds promising (like all new solutions) I wasn&amp;rsquo;t expecting that I would &amp;ldquo;Get to market faster with AWS Amplify&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>http://example.org/posts/01-my-first-post/</link>
+      <pubDate>Mon, 07 Sep 2020 10:51:59 +0100</pubDate>
+      
+      <guid>http://example.org/posts/01-my-first-post/</guid>
+      <description>This post was originally published on dev.to website.
+ So Hi! Kinda awkward to write a post on Dev.to. I use tricks, tips, reading articles from this website almost every day, but I have never written a post in here (so for me this is a bit of a big deal, but from now on I will try to muster my excitement).
+Github actions are something I was hoping to try sooner but there had always been an excuse.</description>
+    </item>
+    
+  </channel>
+</rss>
