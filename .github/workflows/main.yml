@@ -20,3 +20,4 @@ jobs:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           repo: markiewiczjulian/markiewiczjulian.github.io
           branch: master
+          args: -t hello-friend-ng
