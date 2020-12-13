@@ -1,6 +1,6 @@
 # markiewicz_julian_website
 
-This repository serves my personal website via GitHub Pages. You can view it [here](https://markiewiczjulian.github.io/).
+This repository contains my personal website which is on push (using [this](https://github.com/peaceiris/actions-hugo) github action) automatically rendered and pushed to another [repository](https://github.com/markiewiczjulian/markiewiczjulian.github.io) where is served via GitHub Pages. You can view it [here](https://markiewiczjulian.github.io/).
 
 This website was heavily inspired by shibumi [hugo-theme-hello-friend-ng](https://github.com/shibumi/hugo-theme-hello-friend-ng) and panr [hugo-theme-hello-friend](https://github.com/panr/hugo-theme-hello-friend) themes.
 
