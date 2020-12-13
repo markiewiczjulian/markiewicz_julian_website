@@ -16,6 +16,12 @@ this will spin up the server with everything you will need. Alternatively you ca
 
 and move whole directory `/YOUR_PROJECT_ADDRESS/themes/hello-friend-ng` to the themes folder in your new application. Then you can run your site.
 
+To generate ready to use SSR code which needs to only be placed on your server use command:
+
+`hugo -t hello-friend-ng`
+
+all generated files can be found under public directory.
+
 # How to use
 
 This website works similar to the original that was based on [this](https://github.com/shibumi/hugo-theme-hello-friend-ng) one and [this](https://github.com/panr/hugo-theme-hello-friend) one, so I will not describe all options that can be used in conf.toml. I will however leave the example toml file config_example.toml in root of project which describes all options that can be defined for whole site.
