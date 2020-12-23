@@ -166,6 +166,14 @@ figure {
   }
 }
 
+::-moz-selection {
+    background: #d8d8d8;
+}
+
+::selection {
+    background: #d8d8d8;
+} 
+
 code {
   font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
   font-display: auto;
