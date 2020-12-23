@@ -1,6 +1,6 @@
 # markiewicz_julian_website
 
-This repository serves my personal website via GitHub Pages. You can view it [here](https://markiewiczjulian.github.io/).
+This repository contains my personal website which is on push (using [this](https://github.com/peaceiris/actions-hugo) github action) automatically rendered and pushed to another [repository](https://github.com/markiewiczjulian/markiewiczjulian.github.io) where is served via GitHub Pages. You can view it [here](https://markiewiczjulian.com/).
 
 This website was heavily inspired by shibumi [hugo-theme-hello-friend-ng](https://github.com/shibumi/hugo-theme-hello-friend-ng) and panr [hugo-theme-hello-friend](https://github.com/panr/hugo-theme-hello-friend) themes.
 
@@ -8,13 +8,19 @@ This website was heavily inspired by shibumi [hugo-theme-hello-friend-ng](https:
 
 To run this website locally you should install Hugo at least version 0.74.x (extended version). After this you can run:
 
-`hugo server -t hello-friend-ng`
+`hugo server -t hello-friend-ng` 
 
 this will spin up the server with everything you will need. Alternatively you can use only the theme. In such case create new empty hugo site with:
 
 `hugo new site quickstart`
 
 and move whole directory `/YOUR_PROJECT_ADDRESS/themes/hello-friend-ng` to the themes folder in your new application. Then you can run your site.
+
+To generate ready to use SSR code which needs to only be placed on your server use command:
+
+`hugo -t hello-friend-ng`
+
+all generated files can be found under public directory.
 
 # How to use
 
