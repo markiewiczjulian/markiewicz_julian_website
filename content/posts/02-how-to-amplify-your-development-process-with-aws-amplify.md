@@ -129,17 +129,17 @@ Overall Amplify was a big surprise for me. I had a nice time implementing authen
 
 Resources:
 
-- https://docs.amplify.aws/lib/auth/getting-started/q/platform/js
-- https://docs.amplify.aws/cli/start/install
-- https://aws.amazon.com/amplify/
-- https://github.com/aws-amplify/amplify-js
-- https://aws.amazon.com/cognito/pricing/
-- https://aws.amazon.com/iam/
-- https://aws.amazon.com/blogs/mobile/announcing-aws-amplify-flutter-developer-preview/
-- https://blog.back4app.com/aws-amplify-vs-google-firebase/
-- https://www.mitrais.com/news-updates/aws-amplify-vs-google-firebase-which-is-better/#:~:text=Firebase%20is%20suitable%20for%20small,learning%20curve%20is%20very%20important.
+- [getting started with AWS amplify](https://docs.amplify.aws/lib/auth/getting-started/q/platform/js)
+- [install AWS amplify CLI](https://docs.amplify.aws/cli/start/install)
+- [about AWS Amplify](https://aws.amazon.com/amplify/)
+- [AWS Amplify for JS official repository](https://github.com/aws-amplify/amplify-js)
+- [AWS Cognito pricing](https://aws.amazon.com/cognito/pricing/)
+- [AWS IAM](https://aws.amazon.com/iam/)
+- [announcing AWS Amplify support for Flutter](https://aws.amazon.com/blogs/mobile/announcing-aws-amplify-flutter-developer-preview/)
+- [AWS Amplify vs Google Firebase](https://blog.back4app.com/aws-amplify-vs-google-firebase/)
+- [AWS Amplify vs Google Firebase, which is better?](https://www.mitrais.com/news-updates/aws-amplify-vs-google-firebase-which-is-better/#:~:text=Firebase%20is%20suitable%20for%20small,learning%20curve%20is%20very%20important)
 
 Other resources:
 
-- https://www.youtube.com/watch?v=SnqABG8e9Zk this is a recording from The Summit in 2019 where David Maccarone managed to build a real time voting app in under 25 minutes. Using AWS Amplify obviously,
-- https://www.youtube.com/watch?v=ucmbO2lWC2A this is a short video of "Fireship" youtube channel about how Amplify compares to Firebase, might come in handy if you used Google and want to give AWS a try,
+- [this](https://www.youtube.com/watch?v=SnqABG8e9Zk) is a recording from The Summit in 2019 where David Maccarone managed to build a real time voting app in under 25 minutes. Using AWS Amplify obviously,
+- [this](https://www.youtube.com/watch?v=ucmbO2lWC2A) is a short video of "Fireship" youtube channel about how Amplify compares to Firebase, might come in handy if you used Google and want to give AWS a try,
