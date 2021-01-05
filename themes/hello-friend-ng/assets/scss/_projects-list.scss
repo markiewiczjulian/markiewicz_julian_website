@@ -82,6 +82,7 @@
       @media #{$media-size-phone} {
         width: 100%;
         cursor: auto;
+        filter: brightness(1);
       }
     }
     a {
