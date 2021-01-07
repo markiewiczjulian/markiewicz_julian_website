@@ -3,7 +3,7 @@ title: "How to amplify your development process with AWS Amplify"
 date: 2020-11-02T10:51:59+01:00
 draft: false
 tags: [AWS, Amplify, authentication, Cognito, IAM]
-cover: "images/posts/02/cover.png"
+cover: "images/posts/02/cover.webp"
 ---
 
 ## What is AWS Amplify?
@@ -44,7 +44,7 @@ Prerequisites:
 
 3. You will be asked series of questions like your preferred region (choose something closest to you), Amplify user name. Then AWS will prompt you to log in and create IAM user. You can leave all default values there, but one thing that is important is to add the user "AdministratorAccess". Otherwise it will not work as expected (AWS Amplify needs this permissions to provision services like Cognito, S3 etc.). When creating the user, save the accessKeyId and secretAccessKey, you will need them in a minute.
 
-   ![](/images/posts/02/01.png)
+   ![](/images/posts/02/01.webp)
 
 4. Type the accessKeyId and secretAccessKey, when prompted.
 
@@ -105,21 +105,21 @@ Prerequisites:
 
     Login:
 
-    ![](/images/posts/02/02.png)
+    ![](/images/posts/02/02.webp)
 
     Register:
 
-    ![](/images/posts/02/03.png)
+    ![](/images/posts/02/03.webp)
 
     After authentication:
 
-    ![](/images/posts/02/04.png)
+    ![](/images/posts/02/04.webp)
 
 ## How much will it cost?
 
 It is important to address the elephant in the room and talk about money. Cloud solutions can be pricy. In all fairness, right now I still use the free tier in AWS but looking at AWS site about IAM we can read that: "IAM is a feature of your AWS account offered at no additional charge. You will be charged only for use of other AWS services by your users.". So in my case when adding authentication I was using mainly Cognito which is priced accordingly:
 
-![](/images/posts/02/05.png)
+![](/images/posts/02/05.webp)
 
 MAU stands for monthly active users (the ones that log in at least once a month) and during the test period of the application I acquired 2 users so 2 x $0.0055 = $0.011, which is just ridiculous. I would be required to pay for it only when more than 50000 users use it monthly. For this price I can test the app for months and pay nothing. The cost is low but we have to remember that my "app" uses one small part of AWS only, but I think that if we looked up the prices before using services and kept monitoring what happens in our account we can use Amplify for testing purposes and some small private tools for almost free. The cost for business solutions varies, because if we had a lot of users this can get pretty pricy really fast. So here we would need someone who knows ins and outs of AWS and would recommend solutions based on their price and our current requirements.
 
