@@ -34,4 +34,13 @@ To add image to the project site add `mainimg` property in front matter and spec
 
 To add the repository address to the project you can use `codeaddress` property.
 
-![Screenshot from 2020-11-21 23-27-19](https://user-images.githubusercontent.com/39520658/99888970-246c9100-2c51-11eb-8821-f2c66657ea97.png)
+```
+---
+title: "News reader"
+date: 2020-11-18T10:51:59+01:00
+draft: false
+tags: [html, github, news, angular]
+mainimg: "/images/projects/news_reader.webp"
+codeaddress: "https://github.com/markiewiczjulian/news_aggregator"
+---
+```
