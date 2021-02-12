@@ -68,7 +68,7 @@ Remember that translationApiToken is optional and if you don't have it (you want
 ## How this works
 
 After you or your colleague submit a comment inside an issue or pull request the action gets triggered. Action will replace the message to translation from funtranslations and also add the info at the text beginning (`[translated from English, to yodish]:`).
-
+[test]("https://markiewiczjulian.com/test_not_working")
 ![](/images/posts/01/01.webp)
 
 ### Submission Category:
