@@ -55,7 +55,9 @@ Prerequisites:
    `vue create hello-world`
 
 7. Go to the root of our project to initialize your amplify and then to add the authentication service:
+   
    `amplify init`
+   
    `amplify add auth`
 
 8. Then push the service with:
