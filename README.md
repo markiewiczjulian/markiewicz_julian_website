@@ -20,7 +20,7 @@ To generate ready to use SSR code which needs to only be placed on your server u
 
 `hugo -t hello-friend-ng`
 
-all generated files can be found under public directory.
+all generated files can be found under public directory
 
 # How to use
 
