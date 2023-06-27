@@ -4,7 +4,20 @@ on:
   push:
     branches:
       - main
-
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+        required: false
+        type: boolean
+      environment:
+        description: 'Environment to run tests against'
+        required: false
+        type: environment
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
