@@ -3,7 +3,7 @@ title: "News reader"
 date: 2020-11-18T10:51:59+01:00
 draft: false
 tags: [html, github, news, angular]
-mainimg: "/images/projects/news_reader.webp"
+# mainimg: "/images/projects/news_reader.webp"
 codeaddress: "https://github.com/markiewiczjulian/news_aggregator"
 ---
 
